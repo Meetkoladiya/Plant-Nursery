@@ -9,7 +9,7 @@ if(isset($_SESSION["uid"])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Khan Store</title>
+		<title>Plant Nursery</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -30,21 +30,21 @@ if(isset($_SESSION["uid"])){
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Khan Store</a>
+				<a href="#" class="navbar-brand " style="color:#2ecc71">Plant Nursery</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
+				<li><a href="index.php" style="color: #bdc3c7;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="index.php" style="color: #bdc3c7;"><span class="glyphicon glyphicon-modal-window"></span> Services</a></li>
 			</ul>
 			<form class="navbar-form navbar-left">
 		        <div class="form-group">
 		          <input type="text" class="form-control" placeholder="Search" id="search">
 		        </div>
-		        <button type="submit" class="btn btn-primary" id="search_btn"><span class="glyphicon glyphicon-search"></span></button>
+		        <button type="submit" class="btn btn-success" id="search_btn"><span class="glyphicon glyphicon-search"></span></button>
 		     </form>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Cart<span class="badge">0</span></a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #bdc3c7;"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="badge">  0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -69,7 +69,7 @@ if(isset($_SESSION["uid"])){
 						</div>
 					</div>
 				</li>
-				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>SignIn</a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color: #bdc3c7;"><span class="glyphicon glyphicon-user"></span> SignIn</a>
 					<ul class="dropdown-menu">
 						<div style="width:300px;">
 							<div class="panel panel-primary">
@@ -84,7 +84,7 @@ if(isset($_SESSION["uid"])){
 										<a href="#" style="color:white; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;">
 									</form>
 								</div>
-								<div class="panel-footer" id="e_msg"></div>
+								<div class="panel-footer" id="e_msg"> <a href="register.php">Sign-Up</a></div>
 							</div>
 						</div>
 					</ul>
@@ -124,7 +124,7 @@ if(isset($_SESSION["uid"])){
 					<div class="col-md-12 col-xs-12" id="product_msg">
 					</div>
 				</div>
-				<div class="panel panel-info">
+				<div class="panel panel-success">
 					<div class="panel-heading">Products</div>
 					<div class="panel-body">
 						<div id="get_product">
@@ -142,7 +142,6 @@ if(isset($_SESSION["uid"])){
 							</div>
 						</div> -->
 					</div>
-					<div class="panel-footer">&copy; 2016</div>
 				</div>
 			</div>
 			<div class="col-md-1"></div>

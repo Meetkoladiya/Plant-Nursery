@@ -69,7 +69,7 @@ if(isset($_POST["getProduct"])){
 			$pro_image = $row['product_image'];
 			echo "
 				<div class='col-md-4'>
-							<div class='panel panel-info'>
+							<div class='panel panel-success'>
 								<div class='panel-heading'>$pro_title</div>
 								<div class='panel-body'>
 									<img src='product_images/$pro_image' style='width:160px; height:250px;'/>
@@ -105,7 +105,7 @@ if(isset($_POST["get_seleted_Category"]) || isset($_POST["selectBrand"]) || isse
 			$pro_image = $row['product_image'];
 			echo "
 				<div class='col-md-4'>
-							<div class='panel panel-info'>
+							<div class='panel panel-success'>
 								<div class='panel-heading'>$pro_title</div>
 								<div class='panel-body'>
 									<img src='product_images/$pro_image' style='width:160px; height:250px;'/>
@@ -278,7 +278,7 @@ if (isset($_POST["Common"])) {
 								<b class="net_total" style="font-size:20px;"> </b>
 					</div>';
 				if (!isset($_SESSION["uid"])) {
-					echo '<input type="submit" style="float:right;" name="login_user_with_product" class="btn btn-info btn-lg" value="Ready to Checkout" >
+					echo '<input type="submit" style="float:right;" name="login_user_with_product" class="btn btn-success btn-lg" value="Ready to Checkout" >
 							</form>';
 					
 				}else if(isset($_SESSION["uid"])){
@@ -347,17 +347,13 @@ if (isset($_POST["updateCartItem"])) {
 		$sql = "UPDATE cart SET qty='$qty' WHERE p_id = '$update_id' AND ip_add = '$ip_add'";
 	}
 	if(mysqli_query($con,$sql)){
-		echo "<div class='alert alert-info'>
+		echo "<div class='alert alert-success'>
 						<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
 						<b>Product is updated</b>
 				</div>";
 		exit();
 	}
 }
-
-
-
-
 ?>
 
 
