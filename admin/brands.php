@@ -9,10 +9,10 @@
 
       <div class="row">
       	<div class="col-10">
-      		<h2>Manage Brand</h2>
+      		<h2>Manage Classification</h2>
       	</div>
       	<div class="col-2">
-      		<a href="#" data-toggle="modal" data-target="#add_brand_modal" class="btn btn-primary btn-sm">Add Brand</a>
+      		<a href="#" data-toggle="modal" data-target="#add_brand_modal" class="btn btn-primary btn-sm">Add Classification</a>
       	</div>
       </div>
       
@@ -49,7 +49,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Brand</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Classification</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -59,8 +59,8 @@
         	<div class="row">
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Brand Name</label>
-		        		<input type="text" name="brand_title" class="form-control" placeholder="Enter Brand Name">
+		        		<label>Classification</label>
+		        		<input type="text" name="brand_title" class="form-control" placeholder="Enter Classfication Name">
 		        	</div>
         		</div>
         		<input type="hidden" name="add_brand" value="1">
@@ -81,7 +81,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Brand</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Add Classfication</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -92,13 +92,13 @@
             <div class="col-12">
               <input type="hidden" name="brand_id">
               <div class="form-group">
-                <label>Brand Name</label>
-                <input type="text" name="e_brand_title" class="form-control" placeholder="Enter Brand Name">
+                <label>Classfication</label>
+                <input type="text" name="e_brand_title" class="form-control" placeholder="Enter Classfication Name">
               </div>
             </div>
             <input type="hidden" name="edit_brand" value="1">
             <div class="col-12">
-              <button type="button" class="btn btn-primary edit-brand-btn">Update Brand</button>
+              <button type="button" class="btn btn-primary edit-brand-btn">Update</button>
             </div>
           </div>
           

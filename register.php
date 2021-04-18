@@ -52,7 +52,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		";
 		exit();
 	}
-	if(strlen($password) < 9 ){
+	if(strlen($password) < 6 ){
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -61,7 +61,7 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 		";
 		exit();
 	}
-	if(strlen($repassword) < 9 ){
+	if(strlen($repassword) < 6 ){
 		echo "
 			<div class='alert alert-warning'>
 				<a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
@@ -128,7 +128,6 @@ if(empty($f_name) || empty($l_name) || empty($email) || empty($password) || empt
 	}
 	
 }
-
 
 
 ?>

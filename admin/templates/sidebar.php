@@ -33,7 +33,7 @@
           <li class="nav-item">
             <a class="nav-link <?php echo ($page == 'brands.php') ? 'active' : ''; ?>" href="brands.php">
               <span data-feather="shopping-cart"></span>
-              Brands
+              Classfication
             </a>
           </li>
           <li class="nav-item">

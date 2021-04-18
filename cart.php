@@ -7,7 +7,7 @@ require "config/constants.php";
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Khan Store</title>
+		<title>Plant-Nursery</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -27,12 +27,12 @@ require "config/constants.php";
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Khan Store</a>
+				<a href="#" class="navbar-brand" style="color: #2ecc71;">Plant-Nursery</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Home</a></li>
-				<li><a href="index.php"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li>
+				<li><a href="index.php" style="color: #bdc3c7;"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+				<li><a href="index.php" style="color: #bdc3c7;"><span class="glyphicon glyphicon-modal-window"></span> Services</a></li>
 			</ul>
 		</div>
 	</div>
@@ -51,7 +51,7 @@ require "config/constants.php";
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-				<div class="panel panel-primary">
+				<div class="panel panel-success">
 					<div class="panel-heading">Cart Checkout</div>
 					<div class="panel-body">
 						<div class="row">

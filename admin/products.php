@@ -25,7 +25,7 @@
               <th>Price</th>
               <th>Quantity</th>
               <th>Category</th>
-              <th>Brand</th>
+              <th>Classfication</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -69,9 +69,9 @@
         		</div>
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Brand Name</label>
+		        		<label>Classfication</label>
 		        		<select class="form-control brand_list" name="brand_id">
-		        			<option value="">Select Brand</option>
+		        			<option value="">Select Classfication</option>
 		        		</select>
 		        	</div>
         		</div>
@@ -103,7 +103,7 @@
         		</div>
         		<div class="col-12">
         			<div class="form-group">
-		        		<label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
+		        		<label>Product Keywords <small>(eg: plant, fertilizers, tool)</small></label>
 		        		<input type="text" name="product_keywords" class="form-control" placeholder="Enter Product Keywords">
 		        	</div>
         		</div>
@@ -147,9 +147,9 @@
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Brand Name</label>
+                <label>Classfication</label>
                 <select class="form-control brand_list" name="e_brand_id">
-                  <option value="">Select Brand</option>
+                  <option value="">Select Classfication</option>
                 </select>
               </div>
             </div>
@@ -181,7 +181,7 @@
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label>Product Keywords <small>(eg: apple, iphone, mobile)</small></label>
+                <label>Product Keywords <small>(eg: plant, fertilizers, tool)</small></label>
                 <input type="text" name="e_product_keywords" class="form-control" placeholder="Enter Product Keywords">
               </div>
             </div>

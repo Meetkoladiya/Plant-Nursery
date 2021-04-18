@@ -24,8 +24,8 @@ if(isset($_POST["brand"])){
 	$brand_query = "SELECT * FROM brands";
 	$run_query = mysqli_query($con,$brand_query);
 	echo "
-		<div class='nav nav-pills nav-stacked'>
-			<li class='active'><a href='#'><h4>Brands</h4></a></li>
+		<div class='nav nav-pills nav-stacked '>
+			<li class='active'><a href='#'><h4>Classification</h4></a></li>
 	";
 	if(mysqli_num_rows($run_query) > 0){
 		while($row = mysqli_fetch_array($run_query)){
@@ -72,7 +72,7 @@ if(isset($_POST["getProduct"])){
 							<div class='panel panel-success'>
 								<div class='panel-heading'>$pro_title</div>
 								<div class='panel-body'>
-									<img src='product_images/$pro_image' style='width:160px; height:250px;'/>
+									<img src='product_images/$pro_image' style='width:100%; height:250px; object-fit: cover;'/>
 								</div>
 								<div class='panel-heading'>".CURRENCY." $pro_price.00
 									<button pid='$pro_id' style='float:right;' id='product' class='btn btn-danger btn-xs'>AddToCart</button>
@@ -259,7 +259,7 @@ if (isset($_POST["Common"])) {
 								<div class="col-md-2">
 									<div class="btn-group">
 										<a href="#" remove_id="'.$product_id.'" class="btn btn-danger remove"><span class="glyphicon glyphicon-trash"></span></a>
-										<a href="#" update_id="'.$product_id.'" class="btn btn-primary update"><span class="glyphicon glyphicon-ok-sign"></span></a>
+										<a href="#" update_id="'.$product_id.'" class="btn btn-success update"><span class="glyphicon glyphicon-ok-sign"></span></a>
 									</div>
 								</div>
 								<input type="hidden" name="product_id[]" value="'.$product_id.'"/>
